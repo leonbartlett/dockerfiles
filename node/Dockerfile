@@ -2,8 +2,8 @@ FROM alpine:3.8
 
 ENV NODE_VERSION 10.14.2
 
-RUN addgroup -g 1000 node \
-    && adduser -u 1000 -G node -s /bin/sh -D node \
+RUN addgroup -g 1012 node \
+    && adduser -u 1012 -G node -s /bin/sh -D node \
     && apk add --no-cache \
         libstdc++ \
     && apk add --no-cache --virtual .build-deps \
